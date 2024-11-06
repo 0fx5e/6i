@@ -1,0 +1,13 @@
+services:
+  - type: web
+    runtime: node.js
+    name: 6i
+    repo: https://github.com/0fx5e/6i
+    numInstances: 1
+    region: frankfurt
+    plan: standard
+    branch: main      
+    buildCommand: yarn
+    startCommand: node index.js
+    autoDeploy: false
+    maxShutdownDelaySeconds: 120
